@@ -1,4 +1,4 @@
-package com.github.minsoozz.redis.service;
+package com.github.minsoozz.redis.service.atomic;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,6 @@ public class NonAtomicService {
     public void incrementCount() {
         String countValue = redisTemplate.opsForValue().get("non-atomic-count");
         int currentCount = Integer.parseInt(countValue != null ? countValue : "0");
-
         currentCount++;
         redisTemplate.opsForValue().set("non-atomic-count", String.valueOf(currentCount));
     }

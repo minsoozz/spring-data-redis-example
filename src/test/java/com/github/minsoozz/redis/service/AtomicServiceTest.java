@@ -1,5 +1,6 @@
 package com.github.minsoozz.redis.service;
 
+import com.github.minsoozz.redis.service.atomic.AtomicService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

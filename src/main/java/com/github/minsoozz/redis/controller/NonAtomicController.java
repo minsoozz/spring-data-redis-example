@@ -1,6 +1,6 @@
 package com.github.minsoozz.redis.controller;
 
-import com.github.minsoozz.redis.service.NonAtomicService;
+import com.github.minsoozz.redis.service.atomic.NonAtomicService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
